@@ -5,3 +5,7 @@ body {
 header, footer {
     background-color: bisque;
 }
+
+h1.site-title{
+    color: plum;
+}
