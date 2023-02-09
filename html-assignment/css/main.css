@@ -18,6 +18,10 @@ section ul li {
     list-style: square;
 }
 
-section ul li:nth-child(1) {
+section ul li:nth-child(odd) {
     background: plum;
+}
+
+nav ul li {
+    list-style-type: none;
 }
