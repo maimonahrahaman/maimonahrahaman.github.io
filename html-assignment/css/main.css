@@ -17,3 +17,7 @@ h1.site-title {
 section ul li {
     list-style: square;
 }
+
+section ul li:nth-child(1) {
+    background: plum;
+}
