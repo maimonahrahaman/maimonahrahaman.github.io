@@ -32,6 +32,6 @@ nav :link {
     border: solid ;
 }
 
-nav :hover {
+nav :focus {
     background-color: pink;
 }
