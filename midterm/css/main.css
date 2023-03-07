@@ -7,7 +7,6 @@ header h1 {
     padding-left: 390px;
     top: 170px;
     position: absolute;
-    text-align: center;
     font-size: 50px;
     font-weight: 50; 
 }
@@ -69,7 +68,7 @@ h3 {
 }
 
 .text {
-    width: 1000px;
+    width: 1040px;
 }
 
 .form {
