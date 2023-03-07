@@ -1,0 +1,96 @@
+html {
+    background-color: rgb(169, 212, 207);
+    font-family: sans-serif;
+}
+
+header h1 {
+    padding-left: 390px;
+    top: 170px;
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 50; 
+}
+
+.first-img {
+    width: 1050px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+nav ul li {
+    margin: 0;
+    padding-top: 0px;
+    padding-left: 120px;
+    padding-right: 100px;
+    display: inline;
+    font-size: 25px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.story {
+    border-left: solid;
+    border-right: solid;
+}
+
+body {
+    background-color: rgb(212, 232, 231);
+    margin: auto;
+    width: 1050px;
+}
+
+h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 5;
+}
+
+h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 5;
+}
+
+.sec-img {
+    padding: 5px;
+    width: 230px;
+    height: 230px;
+    float:left
+}
+
+.text {
+    width: 1000px;
+}
+
+.form {
+    border: solid 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.send {
+    border: solid 2px;
+}
+
+footer{
+    text-align: right;
+    padding-right: 5px;
+}
