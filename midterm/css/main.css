@@ -37,7 +37,7 @@ header {
 nav ul li {
     margin: 0;
     padding-top: 0px;
-    padding-left: 120px;
+    padding-left: 125px;
     padding-right: 100px;
     display: inline;
     font-size: 25px;
@@ -60,12 +60,14 @@ h2 {
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 5;
+    font-size: 30px;
 }
 
 h3 {
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 5;
+    font-size: 25px;
 }
 
 /* wraps picture around the text */
@@ -78,6 +80,8 @@ h3 {
 
 .text {
     width: 1040px;
+    text-align: justify;
+    padding-left: 5px;
 }
 
 .form {
@@ -89,13 +93,13 @@ h3 {
 textarea {
     padding: 10px;
     max-width: 100%;
-    line-height: 0.5;
+    line-height: 0.2;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
 }
 
 .send {
-    border: solid 2px;
+    border: solid 2px #ccc;
 }
 
 footer{
