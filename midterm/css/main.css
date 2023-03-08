@@ -1,8 +1,17 @@
+/* converts all text to sans-serif */
 html {
     background-color: rgb(169, 212, 207);
     font-family: sans-serif;
 }
 
+/* adds box around the body with a different fill */
+body {
+    background-color: rgb(212, 232, 231);
+    margin: auto;
+    width: 1050px;
+}
+
+/* centers the heading on top of the picture */
 header h1 {
     padding-left: 390px;
     top: 170px;
@@ -11,6 +20,7 @@ header h1 {
     font-weight: 50; 
 }
 
+/* fits the picture to the page */
 .first-img {
     width: 1050px;
 }
@@ -23,6 +33,7 @@ header {
     display: block;
 }
 
+/* removes bullet and makes all in a line */
 nav ul li {
     margin: 0;
     padding-top: 0px;
@@ -32,20 +43,16 @@ nav ul li {
     font-size: 25px;
 }
 
+/* removes underline from the link */
 li a {
     text-decoration: none;
     color: black;
 }
 
+/* adds two lines in nav */
 .story {
     border-left: solid;
     border-right: solid;
-}
-
-body {
-    background-color: rgb(212, 232, 231);
-    margin: auto;
-    width: 1050px;
 }
 
 h2 {
@@ -60,6 +67,7 @@ h3 {
     font-weight: 5;
 }
 
+/* wraps picture around the text */
 .sec-img {
     padding: 5px;
     width: 230px;
@@ -80,7 +88,7 @@ h3 {
 textarea {
     padding: 10px;
     max-width: 100%;
-    line-height: 1.5;
+    line-height: 0.5;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
 }
