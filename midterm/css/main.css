@@ -41,6 +41,7 @@ nav ul li {
     padding-right: 100px;
     display: inline;
     font-size: 25px;
+    text-transform: uppercase;
 }
 
 /* removes underline from the link */
