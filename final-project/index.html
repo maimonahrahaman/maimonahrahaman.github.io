@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/ec9e685984.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="home">
     <!-- bleed-1 should have a background color. -->
     <div class="bleed-1">
         <div class="wrapper">
@@ -17,15 +17,15 @@
             <img src="images/logo.png" alt="picture of the logo">
             <nav class="nav-1">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                 </ul> 
             </nav>    
             <nav class="nav-2">
                 <ul>   
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- expand the search bar till the end. -->
@@ -51,14 +51,14 @@
         <div class="wrapper">
             <section>
                 <img src="images/about-us.jpg" alt="about-us">
-                <h2>About Us</h2>
+                <h2 id="about">About Us</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis non minus voluptatem ut, maxime ab ipsam quasi. Officia quod ratione, perferendis repudiandae tenetur harum debitis expedita corporis consequatur unde laborum.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae saepe porro nobis fuga expedita omnis fugit iure corporis deleniti rem aperiam nisi repellendus maiores ipsum velit voluptas deserunt, ipsam aut.</p>
             </section>
         </div>
     </div>
         <div class="wrapper"> 
-            <h2>Our Services</h2> 
+            <h2 id="services">Our Services</h2> 
               <!-- for desktop use grid on these sections (till print).  -->
             <section class="digital">
                 <img src="images/digital.jpg" alt="digital">
@@ -103,7 +103,7 @@
         </div>
     </div>          
         <div class="wrapper">
-            <h2>Our Team</h2>
+            <h2 id="team">Our Team</h2>
             <!-- use grid so that the text is to the right.-->
             <div class="john">
                 <img src="images/john.jpg" alt="picture of john"> 
@@ -122,7 +122,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod illum ipsum facere officiis recusandae modi enim eius. Qui error asperiores ratione non, minima nam soluta itaque hic at quas.</p>
                 </section>
             </div>
-                <h2>Contact Us</h2>
+                <h2 id="contact">Contact Us</h2>
                 <!-- use flex so that location is on the right and order table to 1 so it is in the bottom. -->
             <section class="form">
                 <h3>Send us a message</h3>
@@ -139,7 +139,9 @@
                         <label for="message">Message</label><br>
                         <textarea id="message" cols="72" rows="7"></textarea>
                     </div> 
-                        <button type="submit">Send</button>
+                    <div>
+                        <button class="send" type="submit">Send</button>
+                    </div>
                 </form>
             </section>
             <!-- add border on the table. -->
