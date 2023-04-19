@@ -104,11 +104,11 @@ li a {
 .logo {
     background-color: #c78c06;
     display: block;
-    padding-right: 91.6%;
+    padding-right: 86.6%;
 }
 
 form input {
-    width: 93%;
+    width: 90%;
     height: 40px;
     font-size: 18px;
   }
@@ -117,8 +117,8 @@ form button {
     color: #c78c06;
     background-color: #222;
     border-color: #c78c06;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 
 .welcome {
@@ -133,8 +133,7 @@ form button {
     padding-bottom: 10px;
     display: inline-block;
     position: absolute;
-    bottom: 350px;
-    
+    bottom: 70px;
 }
 
 
@@ -152,12 +151,21 @@ h2 {
 h3 {
     font-size: 25px;
     font-weight: bold;
+    padding-left: 5px;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 5px;
+    text-decoration: underline;
 }
 
 p {
     font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 5px;
 }
 
 
@@ -189,10 +197,102 @@ p {
 	background-color: #222;
 	color: white;
 	padding: 20px 40px;
-	text-align: center;
 	font-size: 16px;
 	border-style: none;
-	padding-left: 5%;
-
+    margin-left: 5px;
 }
+
+.our-vision img {
+    position: relative;
+}
+
+.our-vision .wrapper .vision {
+    position: absolute;
+    top: 3800px;
+    color: white;
+}
+
+.vis-bttn {
+    background-color: #222222;
+    border: solid #c78c06;
+    color: white;
+    padding: 20px 40px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.john {
+    background-color: #ffe6ac;
+}
+
+.bob {
+    background-color: #ffe6ac;
+}
+
+#contact {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+button .send{
+    padding: 5px;
+    font-size: 14px;
+}
+
+table, th, td {
+	border: 1px solid;
+	padding: 20px 40px;
+	width: 500px;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+iframe{
+	border: 0;
+    width: 500px;
+    height: 250px
+}
+
+footer{
+	background-color: #222;
+	color:#c78c06;
+	padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+
+@media screen and (min-width: 760px){
+	.logo {
+		background-color:#222;	
+		padding: 20px 50px;
+		max-width: 100%;
+        float: left;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+        padding-bottom: 50px;
+    }
+
+    nav a {
+         padding-top: 30px;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .digital {
+        grid-column: 1 / 3;
+    }
+        
+}        
 
