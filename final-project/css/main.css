@@ -50,7 +50,7 @@ table {
 
 
 
-
+/* makes the entire page max-width of 1200px */
 html {
     max-width: 1200px;
     margin: auto;
@@ -61,6 +61,7 @@ html {
     margin: auto;
 }
 
+/* makes all text in open sans font */
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -75,7 +76,7 @@ body {
 }
 
 
-/* Set background color for bleed-1 */
+/* Sets background color for the first bleed */
 .navigation {
     background-color: #222;
     padding-top: 10px;
@@ -87,6 +88,7 @@ nav ul li {
     padding-bottom: 30px;
 }
 
+/* removes border and bullets */
 li a {
     list-style-type: none;
     text-decoration: none;
@@ -95,6 +97,7 @@ li a {
     font-size: 18px;
 }
 
+/* gives home bar a seperate colour */
 .active a {
     background-color: #c78c06;
     color: #222;
@@ -136,7 +139,7 @@ form button {
     bottom: 70px;
 }
 
-
+/* the font sizes for different texts */
 h1 {
     font-size: 40px;
     font-weight: bold;
@@ -158,7 +161,6 @@ h4 {
     font-size: 12px;
     font-weight: bold;
     padding-left: 5px;
-    text-decoration: underline;
 }
 
 p {
@@ -168,6 +170,12 @@ p {
     padding-left: 5px;
 }
 
+hr {
+    position: relative;
+    top: 4px;
+    border: none;
+    border-bottom: 2px solid #c78c06; 
+}    
 
 .welcome-text button {
     background-color: #c78c06;
@@ -188,12 +196,14 @@ p {
     padding-bottom: 10px;
 }
 
+/* gives them a background colour */
 .digital, .marketing, .video, .web, .print {
     background-color: #ffe6ac;
     padding-bottom: 10px;
 }
 
-.button {
+/* all buttons will look same */
+.button-1, .button-2,.button-3,.button-4,.button-5 {
 	background-color: #222;
 	color: white;
 	padding: 20px 40px;
@@ -208,7 +218,7 @@ p {
 
 .our-vision .wrapper .vision {
     position: absolute;
-    top: 3800px;
+    top: 4900px;
     color: white;
 }
 
@@ -263,9 +273,10 @@ footer{
     padding-left: 5px;
 }
 
-
+/* for desktop */
 @media screen and (min-width: 760px){
-	.logo {
+	/* puts logo and nav in one line */
+    .logo {
 		background-color:#222;	
 		padding: 20px 50px;
 		max-width: 100%;
@@ -281,18 +292,141 @@ footer{
     }
 
     nav a {
-         padding-top: 30px;
+        padding-top: 30px;
     }
 
+    .button-1 {
+        text-align: center;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+    .button-2 {
+        text-align: center;
+        padding-left: 127px;
+        padding-right: 127px;
     }
     
-    .digital {
-        grid-column: 1 / 3;
+    .button-3 {
+        text-align: center;
+        padding-left: 75px;
+        padding-right: 75px;
     }
-        
+
+    .button-4 {
+        text-align: center;
+        padding-left: 77px;
+        padding-right: 77px;
+    }
+
+    .button-5 {
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+   /* our services details are in 6x2 grid  */
+   .grid-1{
+	display: grid;
+	width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a a a b b b"
+    "c c d d e e";
+
+    }
+
+    /* naming them grid templete and margin for space */
+
+    .grid-1 .digital {
+        grid-area: a;
+        margin-right: 5px;
+        margin-bottom: 10px;
+      }
+      
+      .grid-1 .marketing {
+        grid-area: b;
+        margin-left: 5px;
+        margin-bottom: 10px;
+      }
+      
+      .grid-1 .video {
+        grid-area: c;
+        margin-right: 5px;
+        margin-bottom: 10px;
+      }
+      
+      .grid-1  .web {
+        grid-area: d;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+      }
+      
+      .grid-1  .print {
+        grid-area: e;
+        margin-left: 5px;
+        margin-bottom: 10px;
+      }
+
+      .our-vision .wrapper .vision {
+        top:3350px
+      }
+      
+      /* styles for the left column */
+      .john {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      /* styles for the right column */
+      .bob {
+        display: flex;
+        flex-direction: row-reverse; 
+        align-items: center;
+        justify-content: flex-end; 
+      }
+      
+      .text-2 {
+        text-align: left; 
+      }
+     
+
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        display: grid;
+        align-items: stretch;
+      }
+      
+      .form {
+        display: grid;
+	    grid-column: 1/ 2;
+        grid-row: 1/ 2;
+        width: fit-content;
+      }
+
+      .contactus{
+        display: grid;
+        width: 500px;
+        grid-column: 1/span 2;
+        grid-row: 2;
+    }
+    
+
+      .table {
+        grid-column: 1/2;
+	    grid-row: 2/ span 1;
+	    width: 500px;
+    }
+
+    .location {
+        display: grid;
+	    grid-column: 2/ span 2;
+	    grid-row: 1;
+    }
+    
 }        
 
