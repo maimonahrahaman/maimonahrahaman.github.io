@@ -9,13 +9,13 @@
     <script src="https://kit.fontawesome.com/ec9e685984.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 <body id="home">
     <!-- bleed-1 should have a background color. -->
     <div class="navigation">
-        <div class="wrapper">
+        <div class="wrapper flex-1">
             <!-- img and home should have a background color. -->
             <!-- remove underline and bullets from nav. -->
             <!-- for desktop use flex so everything is in one line. -->
@@ -28,26 +28,22 @@
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                 <!-- expand the search bar till the end. -->
             </nav>
-            <!-- expand the search bar till the end. -->
-            <form>
+            <form class="search">
                 <input type="text" placeholder="Search">
-                <button type="button"><i class="fa-solid fa-play fa-solid fa-magnifying-glass"></i></button>
+                <button class="search-buttn" type="button"><i class="fa-solid fa-play fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>    
     </div>
     <!-- img will bleed and text will be positioned on top with a background color. -->
     <div class="welcome">
         <img class="img" src="images/main-banner.jpg" alt="main-banner">
-        <div class="wrapper">  
-            <section class="welcome-text">
-                <div class="wrapper">
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, modi corrupti quos molestias, assumenda in blanditiis maiores provident esse quisquam tempora facilis saepe eius unde fugit, voluptates ab nostrum deserunt.</p>
-                    <button class="colour" type="button">Connect with us<i class="fa-solid fa-play"></i></button> 
-                </div>     
-            </section>  
-        </div>      
+        <div class="wrapper welcome-text">  
+            <h1>Welcome to Three Star Media</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nobis quibusdam voluptatibus illum ad architecto doloribus, totam est cum? Numquam, a eos autem voluptatibus impedit aliquam fugiat quas. Recusandae, doloremque.</p>
+            <button class="colour" type="button">Connect with us<i class="fa-solid fa-play"></i></button>      
+        </div>    
     </div> 
     <!-- bleed with a background color. -->
     <div class="about">   
@@ -65,89 +61,87 @@
               <!-- for desktop use grid on these sections (till print).  -->
             <div class="grid-1">
                 <section class="digital">
-                    <img class="img" class="img-1" src="images/digital.jpg" alt="digital">
+                    <img class="img img-1" src="images/digital.jpg" alt="digital">
                     <h3 class="colour">Digital Transformation</h3>
                     <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel, quas consectetur aliquam, nam autem quod debitis nisi placeat numquam animi aut quidem similique natus, excepturi vitae reprehenderit inventore culpa?</p>
                     <button class="button-1" type="button">Digital Plans<i class="fa-solid fa-play"></i></button>
                 </section>
                 <section class="marketing">
-                    <img class="img" class="img-1" src="images/marketing.jpg" alt="marketing">
+                    <img class="img img-1" src="images/marketing.jpg" alt="marketing">
                     <h3 class="colour">Marketing</h3>
                     <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur neque eveniet et assumenda, enim accusamus modi maiores quod harum. Earum eum temporibus rem distinctio labore dignissimos consequatur nobis architecto ullam.</p>
                     <button class="button-2" type="button">Marketing Plans<i class="fa-solid fa-play"></i></button>
                 </section>
                 <section class="video">
-                    <img class="img" class="img-1" src="images/video.jpg" alt="video">
+                    <img class="img img-1" src="images/video.jpg" alt="video">
                     <h3 class="colour">Video Production</h3>
-                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sequi repudiandae qui veniam facilis doloribus quibusdam rem tempore dignissimos laudantium modi rerum doloremque beatae quod, ut autem quo odio illo?</p>
+                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sequi repudiandae qui veniam facilis doloribus quibusdam rem tempore dignissimos laudantium modi rerum doloremque beatae quod, ut autem quo odio illoreprehenderit sapiente quo.</p>
                     <button class="button-3" type="button">Video Plans<i class="fa-solid fa-play"></i></button>
                 </section>
                 <section class="web">
-                    <img class="img" class="img-1" src="images/web.jpg" alt="web">
+                    <img class="img img-1" src="images/web.jpg" alt="web">
                     <h3 class="colour">Web Development</h3>
-                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a odit ex corrupti cupiditate dolorum laudantium sequi nemo quas, iste enim voluptas quam quisquam ea cumque numquam laborum qui provident.</p>
+                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a odit ex corrupti cupiditate dolorum laudantium sequi nemo quas, iste enim voluptas quam quisquam ea cumque numquam laborum qui providentreprehenderit sapiente.</p>
                     <button class="button-4" type="button">Web Plans<i class="fa-solid fa-play"></i></button>
                 </section>
                 <section class="print">
-                    <img class="img" class="img-1" src="images/print.jpg" alt="print">
+                    <img class="img img-1" src="images/print.jpg" alt="print">
                     <h3 class="colour">Print</h3>
-                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a odit ex corrupti cupiditate dolorum laudantium sequi nemo quas, iste enim voluptas quam quisquam ea cumque numquam laborum qui provident.</p>
+                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a odit ex corrupti cupiditate dolorum laudantium sequi nemo quas, iste enim voluptas quam quisquam ea cumque numquam laborum qui provident reprehenderit sapiente repellat praesentium consectetur, porro natus .</p>
                     <button class="button-5" type="button">Print Plans<i class="fa-solid fa-play"></i></button>
                 </section>
             </div>    
         </div> 
         <!-- bleeds the image and put class vision on top. -->
     <div class="our-vision">
-        <img class="img" src="images/vision.jpg" alt="picture for vision">     
-        <div class="wrapper"> 
-            <section class="vision">
-                <h3>Our Vision</h3>
+        <img class="vision-img" src="images/vision.jpg" alt="picture for vision">     
+        <div class="wrapper vision"> 
+            <h3>Our Vision</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quis, debitis minus quisquam facere totam quasi unde sed perspiciatis reprehenderit sapiente repellat praesentium consectetur, porro natus veritatis! Explicabo, cupiditate optio?</p>
                 <button class="vis-bttn" type="button">Learn More<i class="fa-solid fa-play"></i></button>
-            </section>
         </div>
     </div>          
         <div class="wrapper">
             <h2 class="colour" id="team">Our Team</h2>
             <!-- for desktop use flex so that the text is to the right.-->
-            <div class="flex">
+            <div class="flex-2">
                 <div class="john">
-                  <img class="img" class="pic-john" src="images/john.jpg" alt="picture of john"> 
-                  <section class="text-1">  
-                    <h3 class="colour">John Doe</h3>
-                    <h4 class="colour">CEO and Co-owner</h4>
-                    <hr>
-                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod illum ipsum facere officiis recusandae modi enim eius. Qui error asperiores ratione non, minima nam soluta itaque hic at quas.</p>
-                  </section>    
+                  <img class="img pic-john" src="images/john.jpg" alt="picture of john">   
+                   <div class="text-1">
+                        <h3 class="colour">John Doe</h3>
+                        <h4 class="colour">CEO and Co-owner</h4>
+                        <hr>
+                        <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod illum ipsum facere officiis recusandae modi enim eius. Qui error asperiores ratione non, minima nam soluta itaque hic at quas.</p>  
+                    </div>     
                 </div>
-            <!-- for desktop use flex so that the text is to the left.-->    
+                <!-- for desktop use flex so that the text is to the left.-->    
                 <div class="bob">   
-                  <img class="img" class="pic-bob" src="images/bob.jpg" alt="picture of bob">
-                  <section class="text-2">
-                    <h3 class="colour">Bob Rite</h3>
-                    <h4 class="colour">CFO and Co-owner</h4>
-                    <hr>
-                    <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod illum ipsum facere officiis recusandae modi enim eius. Qui error asperiores ratione non, minima nam soluta itaque hic at quas.</p>
-                  </section>
+                  <img class="img pic-bob" src="images/bob.jpg" alt="picture of bob">
+                    <div class="text-2">
+                        <h3 class="colour">Bob Rite</h3>
+                        <h4 class="colour">CFO and Co-owner</h4>
+                        <hr>
+                        <p class="colour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod illum ipsum facere officiis recusandae modi enim eius. Qui error asperiores ratione non, minima nam soluta itaque hic at quas.</p>
+                    </div>     
                 </div>
               </div>   
                 <h2 class="colour" id="contact">Contact Us</h2>
-                <!-- for desktop use flex so that location is on the right and order table to 1 so it is in the bottom. -->
+                <!-- for desktop use grid so that location is on the right and order table to 1 so it is in the bottom. -->
                 <div class="grid-2">
-                    <section class="form" class="colour">
+                    <section class="form colour">
                         <h3>Send us a message</h3>
                         <form action="index.html" method="get" class="contact-us">
                             <div>
                                 <label for="yourname">FullName</label><br>
-                                <textarea id="yourname" cols="72" ></textarea>
+                                <textarea id="yourname"></textarea>
                             </div>
                             <div>
                                 <label for="email">Email</label><br>
-                                <textarea id="email" cols="72" ></textarea>
+                                <textarea id="email"></textarea>
                             </div>
                             <div>
                                 <label for="message">Message</label><br>
-                                <textarea id="message" cols="72" rows="7"></textarea>
+                                <textarea id="message" rows="7"></textarea>
                             </div> 
                             <div>
                                 <button class="send" type="submit">Send</button>
@@ -155,7 +149,7 @@
                         </form>
                     </section>
                     <!-- add border on the table. -->
-                    <section class="colour" class="table">
+                    <section class="colour table">
                         <h3>Hours of operation</h3>
                         <table>
                             <thead>
@@ -178,7 +172,7 @@
                         </table>
                     </section>
                     <!-- remove border from map. -->
-                    <section class="colour" class="location">
+                    <section class="colour location">
                         <h3>Location</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d89730.46637915696!2d-75.804157!3d45.3472564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680387905970!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </section>
