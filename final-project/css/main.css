@@ -50,12 +50,10 @@ table {
 
 
 
-* {
-    box-sizing: border-box;
-}
 
 html {
-    width: 1200px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .wrapper {
@@ -71,10 +69,11 @@ body {
     color: #222;
 }
 
-img {
-    max-width: 100%;
+.img {
+    width: 100%;
     height: auto;
 }
+
 
 /* Set background color for bleed-1 */
 .navigation {
@@ -105,7 +104,7 @@ li a {
 .logo {
     background-color: #c78c06;
     display: block;
-    padding-right: 92%;
+    padding-right: 91.6%;
 }
 
 form input {
@@ -122,18 +121,78 @@ form button {
     width: 40px;
 }
 
-.welcome-text{
-    position: absolute;
-    top: 535px;
-    background-color: #22222298;
-    color: white;
-    padding-top: 60px;
-    padding-left: 10px;
+.welcome {
+    position: relative;
+
 }
 
+ .welcome-text {
+    background-color: #22222298;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 350px;
+    
+}
+
+
 h1 {
-    font-size: 70px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 35px;
     font-weight: bold;
 }
 
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.welcome-text button {
+    background-color: #c78c06;
+    color: #222;
+    padding: 25px;
+    font-size: 18px;
+}
+
+
+
+.about {
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+}
+
+#services {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.digital, .marketing, .video, .web, .print {
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+}
+
+.button {
+	background-color: #222;
+	color: white;
+	padding: 20px 40px;
+	text-align: center;
+	font-size: 16px;
+	border-style: none;
+	padding-left: 5%;
+
+}
 
